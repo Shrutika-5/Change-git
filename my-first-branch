@@ -1,0 +1,69 @@
+1. what is ssh?
+   ssh stands for "secure shell protocol". ssh applicaions are based on client-server protocol architecture, connecting ssh client intance with ssh server.
+
+2. how to get ssh key on local from terminal?
+   
+  - create ssh key on termianl
+    1. open terminal
+    2. This creates new ssh key: ssh-keygen -t ed25519 -C "your_email@example.com"
+    3. Enter a file in which to save the key (/home/YOU/.ssh/ALGORITHM):[Press enter]
+    4. Enter passphrase (empty for no passphrase): [Type a passphrase]
+       Enter same passphrase again: [Type passphrase again]
+    
+3. how to add ssh key to github
+   
+   - adding new ssh key on github account
+     1.copy the ssh public key which is created on terminal and paste it 
+            -copy key->go to git-hub account->go to profile setting->click setting->click ssh and gpg key->click add new ssh key->in "title" field add discriptive label->select authentiacttion or sining key-> paste ssh public key to key box mention on that page
+            ->click add ssh key button
+
+
+4. how to use ssh git clone
+   
+   -git clone ssh://git@ssh.github.com:443/YOUR-USERNAME/YOUR-REPOSITORY.git          
+
+5. then git clone your repo
+
+example:
+    akash@akash:~$ git clone ssh://git@ssh.github.com:443/Shrutika-5/bhaane.com
+                 Cloning into 'bhaane.com'...
+                 remote: Enumerating objects: 7, done.
+                 remote: Counting objects: 100% (7/7), done.
+                 remote: Compressing objects: 100% (4/4), done.
+                 Receiving objects: 100% (7/7), done.
+                 remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+
+6. how should i name the git branch on local
+ 
+   -To give name git branch on local use
+       "git checkout -b my-branch-name" {where my-branch-name=give the whichever you want}   
+   -To add your created branch on local terminal like submline add "subl" on terminal->add what you want->save as->then save
+   -To check where my branch is created use
+       "git branch"    
+   -To see what branch is you are on use
+       "git status"
+
+7. how should you commit 
+
+   -To commit use
+       "git commit -m <type massege what you want add>"    
+   -To see what you done yet till use
+       "git log" command
+   -To checkout your branch is up-to-date or not use
+       "git checkout main" command
+
+
+8. how should i push  git request on terminal
+  
+  -To push request use
+      "git push origin my-branch-name" {where my-branch-name=according to what you name the git branch to create branch in main}
+  -To go forward use
+      "git add ." command -> it will add push requst to origin
+
+9.ow should you pull the git to origin main use
+   
+   "git pull origin main"     
+
+
+***************************************************************************************************************************************************
+       
